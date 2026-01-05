@@ -4,7 +4,7 @@ A fast, aesthetic C++ tool designed to extract `scriptsrc.clump` archives from *
 
 **Created by Lil Poop**
 
-![Banner](https://img.shields.io/badge/Made%20with-Love-pink?style=for-the-badge)
+![Banner](https://img.shields.io/badge/Made%20with-Love-pink?style=for-the-badge) ![C++](https://img.shields.io/badge/C%2B%2B-ff69b4?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Platform](https://img.shields.io/badge/Platform-Windows-ffb6c1?style=for-the-badge&logo=windows&logoColor=white) ![Status](https://img.shields.io/badge/Status-Cute-ffc0cb?style=for-the-badge) ![Sparkles](https://img.shields.io/badge/Sparkles-Everywhere-dda0dd?style=for-the-badge)
 
 <p align="center">
   <img src="https://i.imgur.com/DKt1nti.gif" width="400">
