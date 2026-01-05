@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\ClumpExtractor.cpp" />
+    <ClCompile Include="src\Program.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ClumpExtractor.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Utils.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{de540d70-485d-4af8-9707-e275a4052907}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
