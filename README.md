@@ -4,7 +4,7 @@ A fast, aesthetic C++ tool designed to extract `scriptsrc.clump` archives from *
 
 **Created by Lil Poop**
 
-![Banner](https://img.shields.io/badge/Made%20with-Love-ff9a9e?style=for-the-badge) ![Lang](https://img.shields.io/badge/Lang-C%2B%2B-ff69b4?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![OS](https://img.shields.io/badge/OS-Windows-fbc2eb?style=for-the-badge&logo=windows&logoColor=white) ![Status](https://img.shields.io/badge/Status-Cute-fad0c4?style=for-the-badge) ![Sparkles](https://img.shields.io/badge/Sparkles-%E2%9C%A8-fd79a8?style=for-the-badge)
+![Banner](https://img.shields.io/badge/Made%20with-Love-ff9a9e?style=for-the-badge) ![Lang](https://img.shields.io/badge/Lang-C%2B%2B-ff69b4?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![OS](https://img.shields.io/badge/OS-Windows-fbc2eb?style=for-the-badge&logo=windows&logoColor=white) ![Status](https://img.shields.io/badge/Status-Cute-fad0c4?style=for-the-badge) ![Sparkles](https://img.shields.io/badge/Sparkles-Included!%20%E2%9C%A8-fd79a8?style=for-the-badge)
 
 <p align="center">
   <img src="https://i.imgur.com/DKt1nti.gif" width="400">
