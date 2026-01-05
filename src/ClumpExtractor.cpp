@@ -118,35 +118,48 @@ void ClumpExtractor::ParseNameTable(std::ifstream& file, std::map<uint32_t, std:
         
         std::string tailStr(buffer.begin(), buffer.end());
         
-        size_t start = 0;
-        size_t end = tailStr.find('\n');
-        
-        while (end != std::string::npos) {
-            std::string line = tailStr.substr(start, end - start);
-            // Trim CR if present
-            if (!line.empty() && line.back() == '\r') line.pop_back();
-            
-            size_t colonPos = line.find(':');
-            if (colonPos != std::string::npos) {
-                std::string hashStr = line.substr(0, colonPos);
-                std::string name = line.substr(colonPos + 1);
-                
-                // Trim whitespace
-                hashStr.erase(0, hashStr.find_first_not_of(" \t"));
-                hashStr.erase(hashStr.find_last_not_of(" \t") + 1);
-                name.erase(0, name.find_first_not_of(" \t"));
-                name.erase(name.find_last_not_of(" \t") + 1);
-
-                if (hashStr.length() == 8) {
-                    try {
-                        uint32_t hash = std::stoul(hashStr, nullptr, 16);
-                        nameMap[hash] = name;
-                    } catch (...) {}
+        // Pattern: 8 hex digits, colon, then filename until newline/end
+        size_t pos = 0;
+        while (pos < tailStr.length()) {n
+            size_t hashStart = std::string::npos;
+            for (size_t i = pos; i + 9 < tailStr.length(); i++) {
+                bool isHex = true;
+                for (int j = 0; j < 8; j++) {
+                    char c = tailStr[i + j];
+                    if (!((c >= '0' && c <= '9') || (c >= 'a' && c <= 'f') || (c >= 'A' && c <= 'F'))) {
+                        isHex = false;
+                        break;
+                    }
+                }
+                if (isHex && tailStr[i + 8] == ':') {
+                    hashStart = i;
+                    break;
                 }
             }
             
-            start = end + 1;
-            end = tailStr.find('\n', start);
+            if (hashStart == std::string::npos) break;
+            
+            std::string hashStr = tailStr.substr(hashStart, 8);
+            
+            size_t nameStart = hashStart + 9;
+            size_t nameEnd = tailStr.find('\n', nameStart);
+            if (nameEnd == std::string::npos) nameEnd = tailStr.length();
+            
+            std::string name = tailStr.substr(nameStart, nameEnd - nameStart);
+            // Trim CR if present
+            if (!name.empty() && name.back() == '\r') name.pop_back();
+            // Trim whitespace
+            name.erase(0, name.find_first_not_of(" \t"));
+            name.erase(name.find_last_not_of(" \t") + 1);
+            
+            if (hashStr.length() == 8 && !name.empty()) {
+                try {
+                    uint32_t hash = std::stoul(hashStr, nullptr, 16);
+                    nameMap[hash] = name;
+                } catch (...) {}
+            }
+            
+            pos = nameEnd + 1;
         }
     } catch (...) {
         // Ignore errors
