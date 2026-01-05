@@ -6,6 +6,10 @@ A fast, aesthetic C++ tool designed to extract `scriptsrc.clump` archives from *
 
 ![Banner](https://img.shields.io/badge/Made%20with-Love-pink?style=for-the-badge)
 
+<p align="center">
+  <img src="https://i.imgur.com/DKt1nti.gif" width="600">
+</p>
+
 ## ✨ About
 
 - **📦 scriptsrc.clump**: A custom archive format used in **Call of Duty: Black Ops II** to store game scripts for debugging purposes.
