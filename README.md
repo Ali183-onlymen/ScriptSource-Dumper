@@ -1,10 +1,10 @@
 # ScriptSource-Dumper
 
-A fast, aesthetic C++ tool designed to extract `scriptsrc.clump` archives from **Call of Duty: Black Ops II (T6)**. 
+A fast, aesthetic C++ tool designed to extract `scriptsrc.clump` archives from **Call of Duty: Black Ops II (T6)**.
 
 **Created by Lil Poop**
 
-![Banner](https://img.shields.io/badge/Made%20with-Love-pink?style=for-the-badge) ![C++](https://img.shields.io/badge/C%2B%2B-17-blue?style=for-the-badge)
+![Banner](https://img.shields.io/badge/Made%20with-Love-pink?style=for-the-badge)
 
 ## ✨ About
 
