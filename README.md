@@ -16,12 +16,12 @@ A fast, aesthetic C++ tool designed to extract `scriptsrc.clump` archives from *
 ## 🛠️ Building
 
 ### Prerequisites
-- Visual Studio 2026
+- Visual Studio 2022+
 - MSVC v145 Toolset
 
 ### Build Instructions
 
-1. Open `ScriptSource-Dumper.sln` in Visual Studio 2026.
+1. Open `ScriptSource-Dumper.sln` in Visual Studio 2022+.
 2. Build the solution
 
 Or via command line:
